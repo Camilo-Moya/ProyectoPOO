@@ -60,13 +60,13 @@ if ("serviceWorker" in navigator) {
         nombre: "Parque Simón Bolívar",
         tipo: "Parque",
         imagen: "IMAGES/SimonBolivar.jpeg",
-        descripcion: "Es un espacio verde en el corazón de Bogotá, ideal para descansar y disfrutar del entorno natural."
+        descripcion: "El Parque Metropolitano Simón Bolívar es el parque urbano más grande e importante de Bogotá, considerado el principal pulmón verde de la ciudad. Ubicado en la localidad de Teusaquillo, ofrece un ambiente amplio y natural ideal tanto para el descanso como para el deporte y eventos masivos."
     }, {
         id: 3,
         nombre: "Torre Colpatria",
         tipo: "Edificio",
         imagen: "IMAGES/Colpatria.jpeg",
-        descripcion: "Es un edificio icónico de Bogotá, conocido por su arquitectura moderna y su importancia histórica."
+        descripcion: "La Torre Colpatria es uno de los rascacielos más emblemáticos de Bogotá y un ícono arquitectónico ubicado en el Centro Internacional, sobre la Carrera 7. Con 50 pisos y cerca de 196 metros de altura, es reconocida tanto por su actividad empresarial como por su famoso mirador panorámico en la azotea."
     }];
 
     //Contenedores
