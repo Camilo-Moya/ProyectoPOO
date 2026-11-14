@@ -1,25 +1,43 @@
-const CACHE_NAME = "BogotaExploraCache";
+const CACHE_NAME = "BogotaExploraCache-v2";
 
 const urlsToCache = [
-    "/",
-    "/index.html",
-    "style.css",
-    "/APP.js",
-    "/manifest.json",
-    "/ICONS/BogotaExplora192.png",
-    "/ICONS/BogotaExplora512.png"
+    "./",
+    "./index.html",
+    "./style.css",
+    "./APP.js",
+    "./manifest.json",
+    "./ICONS/BogotaExplora192.png",
+    "./ICONS/BogotaExplora512.png",
+    "./img/bogota.png",
+    "./img/Monserrate.jpeg",
+    "./img/SimonBolivar.jpeg",
+    "./img/Colpatria.jpeg"
 ];
 
 // Instalación del Service Worker
 
 self.addEventListener("install", (event) => {
-
+    self.skipWaiting();
     console.log("Service Worker Instalado");
     event.waitUntil(
-        caches.open("CACHE_NAME")
+        caches.open(CACHE_NAME)
         .then((cache) => {
             console.log("Archivos almacenados en cache");
             return cache.addAll(urlsToCache);
+        })
+    );
+});
+
+self.addEventListener("activate", (event) => {
+    event.waitUntil(
+        caches.keys().then((cacheNames) => {
+            return Promise.all(
+                cacheNames.map((cache) => {
+                    if (cache !== CACHE_NAME) {
+                        return caches.delete(cache);
+                    }
+                })
+            );
         })
     );
 });
@@ -28,12 +46,9 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("fetch", (event) => {
     event.respondWith(
-        caches.match(event.request)
-        .then((response) => {
-            if (response) {
-                return response;
-            }
-            return fetch(event.request);
+        fetch(event.request)
+        .catch(() => {
+            return caches.match(event.request);
         })
     );
 });

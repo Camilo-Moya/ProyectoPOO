@@ -53,19 +53,19 @@ if ("serviceWorker" in navigator) {
         id: 1,
         nombre: "Monserrate",
         tipo: "Cerro",
-        imagen: "IMAGES/Monserrate.jpeg",
+        imagen: "img/Monserrate.jpeg",
         descripcion: "Es un cerro que se encuentra en la ciudad de Bogotá, Colombia. Es uno de los principales atractivos turísticos de la ciudad y ofrece una vista panorámica impresionante de Bogotá desde su cima. En la cima del cerro se encuentra el Santuario del Señor Caído de Monserrate, un lugar de peregrinación y devoción religiosa."
     }, {
         id: 2,
         nombre: "Parque Simón Bolívar",
         tipo: "Parque",
-        imagen: "IMAGES/SimonBolivar.jpeg",
+        imagen: "img/SimonBolivar.jpeg",
         descripcion: "El Parque Metropolitano Simón Bolívar es el parque urbano más grande e importante de Bogotá, considerado el principal pulmón verde de la ciudad. Ubicado en la localidad de Teusaquillo, ofrece un ambiente amplio y natural ideal tanto para el descanso como para el deporte y eventos masivos."
     }, {
         id: 3,
         nombre: "Torre Colpatria",
         tipo: "Edificio",
-        imagen: "IMAGES/Colpatria.jpeg",
+        imagen: "img/Colpatria.jpeg",
         descripcion: "La Torre Colpatria es uno de los rascacielos más emblemáticos de Bogotá y un ícono arquitectónico ubicado en el Centro Internacional, sobre la Carrera 7. Con 50 pisos y cerca de 196 metros de altura, es reconocida tanto por su actividad empresarial como por su famoso mirador panorámico en la azotea."
     }];
 
