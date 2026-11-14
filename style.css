@@ -149,8 +149,28 @@ footer{
     text-align: center;
     padding: 20px 10px;
     margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer p{
     margin: 5px 0;
+}
+/*una regla @media (max-width: 600px) para que en pantallas de celular los iconos y textos del header se ajusten 
+sin desbordar la pantalla:*/
+@media (max-width: 600px){
+    header img{
+        width: 70px;
+        height: 70px;
+    }
+
+    header h1{
+        font-size: 22px;
+        margin: 5px 0;
+    }
+
+    header p{
+        font-size: 13px;
+        margin: 0;
+    }
 }
