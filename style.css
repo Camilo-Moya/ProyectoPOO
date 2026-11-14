@@ -1,0 +1,127 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header{
+    background-color: white;
+    color: rgb(71, 32, 214);
+    padding: 30px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.busqueda{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.busqueda input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+#lugares{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta{
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarjeta h3{
+    padding: 10px;
+    color: #2a09cf;
+}
+
+.tarjeta p{
+    padding: 0 10px 10px;
+}
+
+.tarjeta button{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    padding: 10px;
+    background-color: #210cdd;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tarjeta button:hover{
+    background-color: #2a09cf;
+}
+
+#detalle{
+    margin-bottom: 30px;
+}
+
+.detalleLugar{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin: 20px auto;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.detalleLugar h2{
+    color: #2a09cf;
+}
+
+.detalleLugar img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.detalleLugar p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.detalleLugar button{
+    padding: 10px 20px;
+    border: none;
+    background: #210cdd;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.detalleLugar button:hover{
+    background: #2a09cf;
+}
