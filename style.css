@@ -75,6 +75,7 @@ main{
     color: white;
     border-radius: 10px;
     cursor: pointer;
+    
 }
 
 .tarjeta button:hover{
@@ -122,6 +123,7 @@ main{
     color: white;
     border-radius: 10px;
     cursor: pointer;
+   
 }
 
 .detalleLugar button:hover{
