@@ -82,7 +82,7 @@ main{
 }
 
 .tarjeta button:hover{
-    background-color: #112236;
+    background-color: #6c757d;
 }
 
 #detalle{
@@ -130,5 +130,5 @@ main{
 }
 
 .detalleLugar button:hover{
-    background: #112236;
+    background: #6c757d;
 }
