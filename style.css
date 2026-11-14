@@ -90,7 +90,7 @@ main{
     border-radius: 10px;
     cursor: pointer;
 }
-
+/*cambiar de color si el mouse pasa por encima*/
 .tarjeta button:hover{
     background-color: #6c757d;
 }
