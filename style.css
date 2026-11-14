@@ -5,6 +5,9 @@ body{
     background-image: url(https://www.fodors.com/wp-content/uploads/2019/03/Hero_BogotaPartyCapitol_Heroshutterstock_1019031940.jpg);
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -21,6 +24,7 @@ main{
     width: 90%;
     max-width: 1200px;
     margin: 10px auto;
+    flex: 1;
 }
 
 .busqueda{
@@ -67,7 +71,13 @@ main{
 }
 
 .tarjeta p{
-    padding: 0 10px 10px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    line-height: 1.4em;
+    max-height: 4.2em;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
 }
 
 .tarjeta button{
@@ -131,4 +141,16 @@ main{
 
 .detalleLugar button:hover{
     background: #6c757d;
+}
+
+footer{
+    background-color: #112236;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+footer p{
+    margin: 5px 0;
 }
