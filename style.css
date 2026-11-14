@@ -8,18 +8,19 @@ body{
 }
 
 header{
-    background-color: white;
+    background-color: #0F2537;
     color: rgb(71, 32, 214);
-    padding: 30px;
-    text-align: right;
+    padding: 10px;
+    text-align: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 main{
     width: 90%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 10px auto;
 }
 
 .busqueda{
