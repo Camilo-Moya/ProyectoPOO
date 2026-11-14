@@ -8,8 +8,8 @@ body{
 }
 
 header{
-    background-color: #0F2537;
-    color: rgb(71, 32, 214);
+    background-color: #112236;
+    color: white;
     padding: 10px;
     text-align: center;
     display: flex;
@@ -34,7 +34,7 @@ main{
     padding: 10px;
     font-size: 16px;
     border-radius: 6px;
-    border: 1px solid blue;
+    border: 1px solid #112236;
     box-sizing: border-box;
 }
 
@@ -60,7 +60,7 @@ main{
 
 .tarjeta h3{
     padding: 10px;
-    color: #2a09cf;
+    color: #112236;
 }
 
 .tarjeta p{
@@ -72,14 +72,14 @@ main{
     padding: 10px;
     border: none;
     padding: 10px;
-    background-color: #210cdd;
+    background-color: #112236;
     color: white;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .tarjeta button:hover{
-    background-color: #2a09cf;
+    background-color: #112236;
 }
 
 #detalle{
@@ -100,7 +100,7 @@ main{
 }
 
 .detalleLugar h2{
-    color: #2a09cf;
+    color: #112236;
 }
 
 .detalleLugar img{
@@ -119,12 +119,12 @@ main{
 .detalleLugar button{
     padding: 10px 20px;
     border: none;
-    background: #210cdd;
+    background: #112236;
     color: white;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .detalleLugar button:hover{
-    background: #2a09cf;
+    background: #112236;
 }
