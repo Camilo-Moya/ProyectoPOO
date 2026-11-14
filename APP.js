@@ -175,7 +175,13 @@ solicitud.onsuccess = (evento) => {
     const solicitudLectura = almacen.getAll();
 
     solicitudLectura.onsuccess = () => {
-        lugares = solicitudLectura.result;
+        if (solicitudLectura.result.length > 0) {
+            lugares = solicitudLectura.result;
+        } else {
+            lugares.forEach((lugar) => {
+                almacen.put(lugar);
+            });
+        }
         mostrarLugares(lugares);    
     }
 }
