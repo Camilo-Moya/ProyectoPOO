@@ -172,16 +172,13 @@ solicitud.onsuccess = (evento) => {
     const almacen = transaccion.objectStore(
         "lugares"
     );
+    lugares.forEach((lugar) => {
+        almacen.put(lugar);
+    });
     const solicitudLectura = almacen.getAll();
 
     solicitudLectura.onsuccess = () => {
-        if (solicitudLectura.result.length > 0) {
-            lugares = solicitudLectura.result;
-        } else {
-            lugares.forEach((lugar) => {
-                almacen.put(lugar);
-            });
-        }
+        lugares = solicitudLectura.result;
         mostrarLugares(lugares);    
     }
 }
